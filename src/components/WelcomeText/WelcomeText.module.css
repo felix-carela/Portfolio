@@ -1,0 +1,12 @@
+/* src/components/WelcomeText/WelcomeText.module.css */
+
+.welcomeText {
+    padding: 10vh 0;
+    margin: 0 2vh;
+    text-align: center;
+    font-size: 3vh;
+    color: white; /* Adjust the color as needed */
+  }
+  
+  /* You can add more styles here if you want to customize the look further */
+  

@@ -1,0 +1,65 @@
+/* src/components/Header/Header.module.css */
+
+.header {
+    background-color: rgb(236, 39, 39); /* Example background color */
+    width: 100%;
+    padding: 1vh 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 1vh 10%;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: end;
+    padding-right: 3vh;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 0.5vh 1vh;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8vh;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu a:hover span {
+    transform: scale(1.1);
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.6vh;
+    width: 0;
+    height: 0.4vh;
+    border-radius: 0.2vh;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .menu a:hover::after {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .menu {
+      justify-content: center;
+      padding-right: 0;
+    }
+  }
+  
