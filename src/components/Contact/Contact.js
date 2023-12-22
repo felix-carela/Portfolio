@@ -1,5 +1,3 @@
-// src/components/Contact/Contact.js
-
 import React from 'react';
 import styles from './Contact.module.css';
 
@@ -16,7 +14,7 @@ const Contact = () => {
         </p>
         <p>
           <a href="https://github.com/felix-carela" target="_blank" rel="noopener noreferrer">
-            GitHub
+            <img src="/images/GitHub.png" alt="GitHub" style={{ maxWidth: '50px' }} />
           </a>
         </p>
         <a href="data/Felix Carela Resume.pdf" download className="btn">

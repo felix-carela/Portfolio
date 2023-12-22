@@ -1,52 +1,30 @@
 /* src/components/Skills/Skills.module.css */
 
 .skills {
-    padding: 50px 0;
-    text-align: center;
-    color: white;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 30px; /* Adjust the space between items */
+}
+
+.skillItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillItem img {
+  height: 80px; /* Adjust the size as needed */
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust for smaller screens */
   }
-  
-  .skillsCarousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .skillsList {
-    display: flex;
-    flex-wrap: nowrap;
-    transition: transform 0.5s ease;
-  }
-  
-  .skillsSlide {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 100%;
-    align-items: center;
-  }
-  
-  .skillsSlide img {
-    height: 80px;
-    margin: 10px;
-  }
-  
-  .prevBtn, .nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  
-  .prevBtn { left: 10px; }
-  .nextBtn { right: 10px; }
-  
-  @media only screen and (max-width: 600px) {
-    .skillsList {
-      flex-direction: column;
-    }
-  }
-  
+}

@@ -1,7 +1,7 @@
 /* src/components/Contact/Contact.module.css */
 
 .contact {
-    padding: 50px 0;
+    padding: 0 0;
     text-align: center;
     color: white;
     background-color: #262626;
@@ -14,14 +14,14 @@
   }
   
   .contact a:hover {
-    color: #e63946; /* Example hover color, adjust as needed */
+    color: rgb(236, 39, 39); /* Example hover color, adjust as needed */
   }
   
   .btn {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #e63946; /* Example button color, adjust as needed */
+    background-color: rgb(236, 39, 39); /* Example button color, adjust as needed */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -29,6 +29,6 @@
   }
   
   .btn:hover {
-    background-color: #d62828; /* Example hover color for button, adjust as needed */
+    background-color: rgb(236, 39, 39); /* Example hover color for button, adjust as needed */
   }
   
