@@ -3,14 +3,9 @@
   "name": "Felix Carela Portfolio",
   "icons": [
     {
-      "src": "favicon-192x192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "favicon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
