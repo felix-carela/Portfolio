@@ -1,65 +1,64 @@
 /* src/components/Header/Header.module.css */
 
 .header {
-    background-color: rgb(236, 39, 39); /* Example background color */
-    width: 100%;
-    padding: 1vh 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    padding: 1vh 10%;
-  }
-  
+  background-color: rgb(236, 39, 39); /* Match the nav background color */
+  width: 100%;
+  padding: 1vh 0; /* Adjust padding to match */
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1vh 10%; /* Ensure this matches the container in the HTML/CSS */
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
+  padding-right: 3vh; /* Ensure this matches the nav ul padding */
+  list-style: none;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0.5vh 1vh; /* Match the margin from nav ul li */
+}
+
+.menu a {
+  color: #fff; /* Ensure color matches */
+  text-decoration: none;
+  font-size: 1.8vh; /* Match the font size */
+  position: relative;
+  transition: color 0.3s ease; /* Keep the color transition */
+}
+
+.menu a span {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Transition for transform */
+}
+
+.menu a:hover span {
+  transform: scale(1.1); /* Scale the text only */
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6vh;
+  width: 0;
+  height: 0.4vh;
+  border-radius: 0.2vh;
+  background-color: #fff; /* Ensure this matches */
+  transition: width 0.3s ease; /* Keep the width transition */
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   .menu {
-    display: flex;
-    justify-content: end;
-    padding-right: 3vh;
-    list-style: none;
-    margin: 0;
+    justify-content: center;
+    padding-right: 0;
   }
-  
-  .menu li {
-    margin: 0.5vh 1vh;
-  }
-  
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.8vh;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .menu a span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-  }
-  
-  .menu a:hover span {
-    transform: scale(1.1);
-  }
-  
-  .menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.6vh;
-    width: 0;
-    height: 0.4vh;
-    border-radius: 0.2vh;
-    background-color: #fff;
-    transition: width 0.3s ease;
-  }
-  
-  .menu a:hover::after {
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .menu {
-      justify-content: center;
-      padding-right: 0;
-    }
-  }
-  
+}
