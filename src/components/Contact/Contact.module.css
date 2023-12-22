@@ -1,29 +1,62 @@
 .contact {
-  padding: 0 0;
-  text-align: center;
   color: white;
   background-color: #262626;
+  border-top: white 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh 0;
 }
 
-.sub-title {
-  font-size: 4vh;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.contact a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.leftColumn {
+  flex: 1;
+  text-align: left;
 }
 
-.contact a:hover {
-  color: rgb(236, 39, 39);
+.rightColumn {
+  flex: -1;
+  text-align: right;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+.contactTitle {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2vh;
+}
+
+.socialIcon {
+  max-width: 30px;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 20px;
-  background-color: rgb(236, 39, 39); /* Primary button color */
+  background-color: rgb(236, 39, 39);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -31,10 +64,10 @@
 }
 
 .btn:hover {
-  background-color: rgb(200, 35, 35); /* Slightly darker for hover effect */
+  background-color: rgb(200, 35, 35);
 }
 
 .btn:active {
-  background-color: rgb(175, 30, 30); /* Even darker for active/clicked effect */
-  transform: translateY(2px); /* Optional: gives a small push-down effect when clicked */
+  background-color: rgb(175, 30, 30);
+  transform: translateY(2px);
 }

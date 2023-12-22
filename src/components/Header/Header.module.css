@@ -1,49 +1,51 @@
 .header {
   background-color: rgb(236, 39, 39);
   width: 100%;
-  padding: 1vh 0;
   box-sizing: border-box;
+  border-bottom: white 1px solid;
 }
 
 .container {
   width: 100%;
-  padding: 1vh 10%;
-  display: flex; /* Align logo and nav */
-  justify-content: space-between; /* Space between logo and nav */
+  padding: .3vh 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logoLink {
-  display: inline-block; /* For proper sizing and alignment */
+  display: inline-block;
 }
 
 .logo {
-  height: 5vh; /* Adjust as needed */
-  width: auto; /* Maintain aspect ratio */
+  height: 2.5vh;
+  width: auto;
 }
 
 .menu {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 3vh;
   list-style: none;
   margin: 0;
 }
 
 .menu li {
-  margin: 0.5vh 1vh;
+  margin: 0 1vh;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.8vh;
+  font-size: 1.9vh;
   position: relative;
   transition: color 0.3s ease;
 }
 
 .menu a span {
+  font-size: 1.5vh;
   display: inline-block;
   transition: transform 0.3s ease;
+  font-family: 'Roboto Slab', serif;
 }
 
 .menu a:hover span {
@@ -53,31 +55,35 @@
 .menu a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -0.6vh;
+  left: -3%;
+  bottom: -0.35vh;
   width: 0;
-  height: 0.4vh;
+  height: 0.25vh;
   border-radius: 0.2vh;
   background-color: #fff;
   transition: width 0.3s ease;
 }
 
 .menu a:hover::after {
-  width: 100%;
+  width: 108%;
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center; /* Align items vertically */
+    padding: 1vh 5%; /* Adjust padding as needed */
+  }
+
   .menu {
-    justify-content: center;
+    justify-content: flex-end;
     padding-right: 0;
   }
-  
-  .container {
-    flex-direction: column; /* Stack logo and menu */
-    align-items: center; /* Center items */
-  }
-  
+
   .logoLink {
-    margin-bottom: 2vh; /* Space between logo and menu */
+    display: flex; /* Ensure logo maintains its shape */
+    align-items: center; /* Align logo vertically */
   }
 }
+
