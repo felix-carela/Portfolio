@@ -1,5 +1,3 @@
-// src/components/Projects/Projects.js
-
 import React from 'react';
 import styles from './Projects.module.css';
 
@@ -9,7 +7,6 @@ const Projects = () => {
       <div className="container">
         <h1 className="sub-title">Projects</h1>
         <div className={styles.projectsList}>
-          {/* Project 1 */}
           <div className={styles.projectItem}>
             <img src="images/FurniTech.png" alt="FurniTech" />
             <div className={styles.layer}>
@@ -20,7 +17,6 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          {/* Project 2 */}
           <div className={styles.projectItem}>
             <img src="images/HiddenNYC.png" alt="HiddenNYC" />
             <div className={styles.layer}>
@@ -31,7 +27,6 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          {/* Project 3 */}
           <div className={styles.projectItem}>
             <img src="images/Minesweeper.png" alt="Minesweeper" />
             <div className={styles.layer}>

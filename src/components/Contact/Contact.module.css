@@ -1,34 +1,40 @@
-/* src/components/Contact/Contact.module.css */
-
 .contact {
-    padding: 0 0;
-    text-align: center;
-    color: white;
-    background-color: #262626;
-  }
-  
-  .contact a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .contact a:hover {
-    color: rgb(236, 39, 39); /* Example hover color, adjust as needed */
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: rgb(236, 39, 39); /* Example button color, adjust as needed */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: rgb(236, 39, 39); /* Example hover color for button, adjust as needed */
-  }
-  
+  padding: 0 0;
+  text-align: center;
+  color: white;
+  background-color: #262626;
+}
+
+.sub-title {
+  font-size: 4vh;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: rgb(236, 39, 39);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: rgb(236, 39, 39); /* Primary button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(200, 35, 35); /* Slightly darker for hover effect */
+}
+
+.btn:active {
+  background-color: rgb(175, 30, 30); /* Even darker for active/clicked effect */
+  transform: translateY(2px); /* Optional: gives a small push-down effect when clicked */
+}

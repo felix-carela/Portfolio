@@ -1,10 +1,7 @@
-// src/components/Skills/Skills.js
-
 import React from 'react';
 import styles from './Skills.module.css';
 
 const Skills = () => {
-  // Array of skill images
   const skills = [
     { src: "https://img.shields.io/badge/-Python-black?style=flat-square&logo=python", alt: "Python" },
     { src: "https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript", alt: "JavaScript" },
