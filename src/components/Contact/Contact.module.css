@@ -99,7 +99,7 @@
 
 .socialIcon1:hover {
   filter: brightness(1.2);
-  box-shadow: 0 0 10px 0px #a5a6a9;
+  box-shadow: 0 0 10px 2px #a5a6a9;
 }
 
 .socialIcon2 {
@@ -113,7 +113,7 @@
 
 .socialIcon2:hover {
   filter: brightness(1.2);
-  box-shadow: 0 0 10px 0px #a5a6a9;
+  box-shadow: 0 0 10px 2px #a5a6a9;
 }
 
 .btn {

@@ -21,7 +21,7 @@
   margin: 10px 2px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .skillsGrid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }

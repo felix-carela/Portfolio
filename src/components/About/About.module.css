@@ -41,22 +41,41 @@
 }
 .aboutCol2 p {
   margin-top: 1vh;
-  text-align: justify;
-  font-size: 1.5vh;
+  text-align:center;
+  font-size: 16px;
   line-height: 2vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .row {
     flex-direction: column;
   }
-
+  
+  .aboutCol1 img {
+    margin-bottom: 20px;
+  }
+  
   .aboutCol1,
   .aboutCol2 {
     flex-basis: 100%;
   }
+  
+  .aboutCol2 h1 {
+    font-size: 20px;
+  }
+  
+  .aboutCol2 p{
+    font-size: 12px;
+  }
+  
+}
 
-  .aboutCol1 img {
-    margin-bottom: 20px;
+@media only screen and (max-width: 400px) {
+  .aboutCol2 h1 {
+    font-size: 1.5vh;
+  }
+  
+  .aboutCol2 p{
+    font-size: 0.8vh;
   }
 }
