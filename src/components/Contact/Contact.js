@@ -8,15 +8,13 @@ const Contact = () => {
   const [isButtonActive, setIsButtonActive] = useState(false);
 
   const copyToClipboard = () => {
-    const email = "felixacarela@protonmail.com"; // The email you want to copy
+    const email = "felixacarela@protonmail.com";
     navigator.clipboard.writeText(email).then(
       () => {
         console.log("Email copied to clipboard!");
-        // Optionally, implement some user feedback here to indicate success
       },
       (err) => {
         console.error("Could not copy text: ", err);
-        // Optionally, implement some user feedback here to indicate failure
       }
     );
   };
@@ -65,7 +63,7 @@ const Contact = () => {
                 <img
                   src={LinkedInIcon}
                   alt="LinkedIn"
-                  className={styles.socialIcon}
+                  className={styles.socialIcon1}
                 />
               </a>
               <a
@@ -76,7 +74,7 @@ const Contact = () => {
                 <img
                   src={GitHubIcon}
                   alt="GitHub"
-                  className={styles.socialIcon}
+                  className={styles.socialIcon2}
                 />
               </a>
             </div>

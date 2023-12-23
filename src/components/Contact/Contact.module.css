@@ -22,14 +22,14 @@
 }
 
 .rightColumn {
-  flex: -1; /* Adjusted for more space */
+  flex: -1;
   text-align: right;
 }
 
 .contactRow {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Aligns items to the start of the container */
+  justify-content: flex-start;
   gap: 1vh;
   width: 100%;
 }
@@ -37,7 +37,7 @@
 .contactTitle {
   font-size: 1.5em;
   font-family: 'Roboto Slab', serif;
-  margin-right: 10px; /* Space between title and email */
+  margin-right: 10px;
 }
 
 .inputGroup {
@@ -45,17 +45,17 @@
   align-items: center;
   border: 1px solid #d1d5da;
   border-radius: 6px;
-  overflow: hidden; /* Ensures content fits within the borders */
+  overflow: hidden;
 }
 
 .formControl {
   color: white;
-  flex-grow: 1; /* Allows it to fill the space */
+  flex-grow: 1;
   padding: 5px 10px;
   font-family: monospace;
   border: none;
   background-color: transparent;
-  min-width: 220px; /* Adjust based on your email length */
+  min-width: 220px;
 }
 
 .copyBtn {
@@ -74,7 +74,7 @@
 }
 
 .copyBtn.active {
-  background-color: #eff3f6; /* Color when clicked */
+  background-color: #eff3f6;
 }
 
 .octiconCopy {
@@ -85,12 +85,35 @@
 
 .socialLinks {
   display: flex;
-  gap: 10px; /* Space between icons */
+  gap: 10px;
 }
 
-.socialIcon {
-  width: 30px; /* Adjust as needed */
-  height: auto;
+.socialIcon1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  transition: filter 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.socialIcon1:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px 0px #a5a6a9;
+}
+
+.socialIcon2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: filter 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.socialIcon2:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px 0px #a5a6a9;
 }
 
 .btn {
