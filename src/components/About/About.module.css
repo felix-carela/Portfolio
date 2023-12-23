@@ -1,7 +1,6 @@
 .about {
-  padding: 80px 0;
-  color: white;
-  text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 6vh;
 }
 
 .row {
@@ -18,24 +17,30 @@
 }
 
 .aboutCol1 {
-  flex-basis: 35%;
+  flex-basis: 30%;
 }
 
 .aboutCol1 img {
-  max-width: 100%;
+  max-height: 40vh;
+  max-width: 30vh;
   height: auto;
   border-radius: 15px;
+  margin-right: 20px;
 }
 
 .aboutCol2 {
-  flex-basis: 60%;
+  flex-basis: 70%;
   background-color: #262626;
   border-radius: 15px;
   padding: 20px;
+  max-height: 40vh;
 }
-
+.aboutCol2 h1 {
+  font-size: 2.5vh;
+  text-align: center;
+}
 .aboutCol2 p {
-  margin-top: 15px;
+  margin-top: 1vh;
   text-align: justify;
   font-size: 1.5vh;
   line-height: 2vh;

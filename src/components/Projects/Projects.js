@@ -2,6 +2,11 @@ import React from 'react';
 import styles from './Projects.module.css';
 
 const Projects = () => {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div id="projects" className={styles.projects}>
       <div className="container">
@@ -15,6 +20,12 @@ const Projects = () => {
                 An application for users to explore and purchase a wide array of
                 furniture products.
               </p>
+              <button
+                className={styles.visitButton}
+                onClick={() => openInNewTab('https://feature-workpls--playful-alpaca-c1fe99.netlify.app/')}
+              >
+                Visit
+              </button>
             </div>
           </div>
           <div className={styles.projectItem}>
@@ -25,6 +36,12 @@ const Projects = () => {
                 An application for users to explore lesser-known pop-up food
                 eateries and speakeasy bars across Manhattan.
               </p>
+              <button
+                className={styles.visitButton}
+                onClick={() => openInNewTab('https://team-america-project-3-frontend.vercel.app/')}
+              >
+                Visit
+              </button>
             </div>
           </div>
           <div className={styles.projectItem}>
@@ -35,6 +52,12 @@ const Projects = () => {
                 A game where the user must avoid clicking on the hidden bombs
                 within the cells.
               </p>
+              <button
+                className={styles.visitButton}
+                onClick={() => openInNewTab('https://felix-carela-minesweeper.netlify.app/')}
+              >
+                Visit
+              </button>
             </div>
           </div>
         </div>

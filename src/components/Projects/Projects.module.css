@@ -14,17 +14,16 @@
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  /* Set a specific height or leave as is to be determined by the grid layout */
 }
 
 .projectItem img {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Height is automatic to maintain aspect ratio */
-  max-height: 100%; /* Ensure it doesn't exceed the container height */
+  width: 100%;
+  height: auto;
+  max-height: 100%;
   display: block;
   border-radius: 10px;
   transition: transform 0.5s;
-  object-fit: cover; /* This will cover the area, cropping the image if necessary */
+  object-fit: cover;
 }
 
 .layer {
@@ -44,6 +43,11 @@
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
+}
+
+.visitButton:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .layer h3 {
