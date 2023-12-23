@@ -5,52 +5,88 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vh 0;
+  padding: 1.2vh 0;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 80%;
   max-width: 1200px;
 }
 
 .leftColumn {
-  flex: 1;
+  flex: 2;
   text-align: left;
 }
 
 .rightColumn {
-  flex: -1;
+  flex: -1; /* Adjusted for more space */
   text-align: right;
 }
 
-.contactHeader {
+.contactRow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Aligns items to the start of the container */
   gap: 1vh;
+  width: 100%;
 }
 
 .contactTitle {
-  margin: 0;
   font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  margin-right: 10px; /* Space between title and email */
 }
 
-.contactInfo {
+.inputGroup {
   display: flex;
   align-items: center;
-  gap: 2vh;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  overflow: hidden; /* Ensures content fits within the borders */
+}
+
+.formControl {
+  color: white;
+  flex-grow: 1; /* Allows it to fill the space */
+  padding: 5px 10px;
+  font-family: monospace;
+  border: none;
+  background-color: transparent;
+  min-width: 220px; /* Adjust based on your email length */
+}
+
+.copyBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #eff3f6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copyBtn:hover {
+  background-color: #e1e4e8;
+}
+
+.octiconCopy {
+  fill: #586069;
+  width: 16px;
+  height: 16px;
 }
 
 .socialLinks {
   display: flex;
-  gap: 2vh;
+  gap: 10px; /* Space between icons */
 }
 
 .socialIcon {
-  max-width: 30px;
+  width: 30px; /* Adjust as needed */
+  height: auto;
 }
 
 .btn {
