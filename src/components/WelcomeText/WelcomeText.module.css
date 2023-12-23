@@ -1,10 +1,14 @@
 .welcomeText {
-  padding: 10vh 0;
-  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2vh;
+  margin: 0;
   text-align: center;
-  font-size: 1.2vh;
+  font-size: 1.4vh;
   color: white;
-  background-image: url('C:\Users\felix\code\portfolio\public\images\WelcomeBackground.jpg');
+  background-image: url('../../assets/images/WelcomeBackground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +17,5 @@
 }
 
 .welcomeText h1 {
-  margin-top: -80px;
   font-family: 'PT Serif', serif;
 }
-

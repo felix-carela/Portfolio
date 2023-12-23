@@ -29,3 +29,12 @@
     height: 38px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  .skillItem img {
+    height: 30px;
+  }
+}

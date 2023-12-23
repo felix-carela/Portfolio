@@ -42,7 +42,7 @@
 }
 
 .menu a span {
-  font-size: 1.5vh;
+  font-size: 1.6vh;
   display: inline-block;
   transition: transform 0.3s ease;
   font-family: "Roboto Slab", serif;
@@ -76,9 +76,17 @@
     padding: 1vh 5%;
   }
 
+  .logo {
+    height: 4vh;
+  }
+
   .menu {
     justify-content: flex-end;
     padding-right: 0;
+  }
+
+  .menu a span {
+    font-size: 2.4vh;
   }
 
   .logoLink {
