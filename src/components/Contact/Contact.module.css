@@ -70,7 +70,11 @@
 }
 
 .copyBtn:hover {
-  background-color: #e1e4e8;
+  background-color: #a5a6a9;
+}
+
+.copyBtn.active {
+  background-color: #eff3f6; /* Color when clicked */
 }
 
 .octiconCopy {

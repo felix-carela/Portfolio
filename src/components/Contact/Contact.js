@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import CopyIcon from "../../assets/images/copy.png";
 import LinkedInIcon from "../../assets/images/LinkedIn.png";
 import GitHubIcon from "../../assets/images/GitHub.png";
 
 const Contact = () => {
+  const [isButtonActive, setIsButtonActive] = useState(false);
+
   const copyToClipboard = () => {
-    const copyText = document.getElementById("email-input");
-    copyText.select();
-    document.execCommand("copy");
+    const email = "felixacarela@protonmail.com"; // The email you want to copy
+    navigator.clipboard.writeText(email).then(
+      () => {
+        console.log("Email copied to clipboard!");
+        // Optionally, implement some user feedback here to indicate success
+      },
+      (err) => {
+        console.error("Could not copy text: ", err);
+        // Optionally, implement some user feedback here to indicate failure
+      }
+    );
   };
 
   return (
@@ -36,15 +46,17 @@ const Contact = () => {
                 value="felixacarela@protonmail.com"
                 aria-label="Email address"
               />
-              <button onClick={copyToClipboard} className={styles.copyBtn}>
-                {/* Using the SVG as an image */}
+              <button
+                onMouseDown={() => setIsButtonActive(true)}
+                onMouseUp={() => setIsButtonActive(false)}
+                onMouseLeave={() => setIsButtonActive(false)}
+                onClick={copyToClipboard}
+                className={`${styles.copyBtn} ${isButtonActive ? styles.active : ''}`}
+              >
                 <img src={CopyIcon} alt="Copy" className={styles.octiconCopy} />
-                {/* Or use it as a component if your setup supports it */}
-                {/* <CopyIcon className={styles.octiconCopy} /> */}
               </button>
             </div>
             <div className={styles.socialLinks}>
-              {/* ... */}
               <a
                 href="https://www.linkedin.com/in/felix-carela/"
                 target="_blank"
