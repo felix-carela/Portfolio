@@ -6,7 +6,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.container}>
         <a href="http://felixcarela.com" className={styles.logoLink}>
-          <img src="/images/logo.png" alt="Logo" className={styles.logo}/>
+          <img src="logo.png" alt="Logo" className={styles.logo}/>
         </a>
         <nav>
           <ul className={styles.menu}>

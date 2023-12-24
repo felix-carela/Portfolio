@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './Projects.module.css';
+import FurniTech from '../../assets/images/FurniTech.png';
+import HiddenNYC from '../../assets/images/HiddenNYC.png';
+import Minesweeper from '../../assets/images/Minesweeper.png';
 
 const Projects = () => {
   const openInNewTab = (url) => {
@@ -13,7 +16,7 @@ const Projects = () => {
         <h1 className="sub-title">Projects</h1>
         <div className={styles.projectsList}>
           <div className={styles.projectItem}>
-            <img src="images/FurniTech.png" alt="FurniTech" />
+            <img src={ FurniTech } alt="FurniTech" />
             <div className={styles.layer}>
               <h3>FurniTech</h3>
               <p>
@@ -29,7 +32,7 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectItem}>
-            <img src="images/HiddenNYC.png" alt="HiddenNYC" />
+            <img src={ HiddenNYC } alt="HiddenNYC" />
             <div className={styles.layer}>
               <h3>HiddenNYC</h3>
               <p>
@@ -44,7 +47,7 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectItem}>
-            <img src="images/Minesweeper.png" alt="Minesweeper" />
+            <img src={ Minesweeper } alt="Minesweeper" />
             <div className={styles.layer}>
               <h3>Minesweeper</h3>
               <p>
