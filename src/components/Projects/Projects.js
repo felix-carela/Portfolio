@@ -33,8 +33,7 @@ const Projects = () => {
             <div className={styles.layer}>
               <h3>HiddenNYC</h3>
               <p>
-                An application for users to explore lesser-known pop-up food
-                eateries and speakeasy bars across Manhattan.
+                An application for users to explore speakeasy bars across Manhattan.
               </p>
               <button
                 className={styles.visitButton}

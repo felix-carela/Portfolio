@@ -33,7 +33,6 @@ const Contact = () => {
         </div>
         <div className={styles.rightColumn}>
           <div className={styles.contactRow}>
-            <h1 className={styles.contactTitle}>Contact:</h1>
             <div className={styles.inputGroup}>
               <input
                 id="email-input"
