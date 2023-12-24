@@ -1,2 +1,3 @@
 [build]
-  publish = "public/"
+  command = "npm run build"
+  publish = "build/"  # updated to the correct directory
