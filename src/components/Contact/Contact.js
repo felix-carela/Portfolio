@@ -24,7 +24,7 @@ const Contact = () => {
       <div className={styles.container}>
         <div className={styles.leftColumn}>
           <a
-            href="data/Felix Carela Resume.pdf"
+            href="/Felix_Carela_Resume.pdf"
             download
             className={styles.btn}
           >
