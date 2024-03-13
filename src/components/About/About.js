@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import profilePicture from '../../assets/images/profilePicture.JPG';
+import profilePicture from "../../assets/images/profilePicture.JPG";
 
 const About = () => {
   return (
@@ -13,9 +13,13 @@ const About = () => {
           <div id="about-col-2" className={styles.aboutCol2}>
             <h1>Felix Carela</h1>
             <p>
-              I am a Software Engineer who is passionate about solving technical
-              and algorithmic problems while thriving in collaborative
-              environments. My previous career in the Marine Corps provided me
+              I am a Software Engineer with 3 years of programming experience
+              from personal and group projects, passionate about solving
+              technical and algorithmic problems while thriving in collaborative
+              environments.
+            </p>
+            <p>
+              My previous career in the Marine Corps provided me
               with invaluable experiences that honed my ability to maintain
               composure under pressure and collaborate effectively with diverse
               groups, even in unique and challenging circumstances. This

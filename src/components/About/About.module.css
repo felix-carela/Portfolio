@@ -34,6 +34,8 @@
   border-radius: 15px;
   padding: 15px 150px;
   max-height: 30vh;
+  overflow-wrap: break-word;
+  overflow-y: auto;
 }
 .aboutCol2 h1 {
   font-size: 28px;
@@ -42,10 +44,15 @@
 }
 .aboutCol2 p {
   margin-top: 5px;
-  text-align:center;
-  font-size: 18px;
-  line-height: 2vh;
+  text-align: left;
+  font-size: .8vw;
+  line-height: 1.6em;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.aboutCol2 p:first-of-type {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -57,10 +64,9 @@
     font-size: 27px;
   }
 
-  .aboutCol2 p{
-    font-size: 17px;
+  .aboutCol2 p {
+    font-size: .85vw;
   }
-  
 }
 
 @media only screen and (max-width: 1200px) {
@@ -72,11 +78,9 @@
     font-size: 24px;
   }
 
-  .aboutCol2 p{
-    font-size: 16px;
-    line-height: 23px;
+  .aboutCol2 p {
+    font-size: .95vw;
   }
-  
 }
 
 @media only screen and (max-width: 1000px) {
@@ -108,10 +112,9 @@
   .aboutCol2 h1 {
     font-size: 24px;
   }
-  
+
   .aboutCol2 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 3.5vw;
   }
 }
 
@@ -124,8 +127,7 @@
     font-size: 17px;
   }
 
-  .aboutCol2 p{
-    font-size: 14px;
+  .aboutCol2 p {
+    font-size: 4vw;
   }
-  
 }
