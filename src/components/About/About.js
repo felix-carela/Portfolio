@@ -13,7 +13,7 @@ const About = () => {
           <div id="about-col-2" className={styles.aboutCol2}>
             <h1>Felix Carela</h1>
             <p>
-              I am a Software Engineer with 3 years of programming experience
+              I am a Software Engineer with 2 years of programming experience
               from personal and group projects, passionate about solving
               technical and algorithmic problems while thriving in collaborative
               environments.
