@@ -13,24 +13,7 @@ const About = () => {
           <div id="about-col-2" className={styles.aboutCol2}>
             <h1>Felix Carela</h1>
             <p>
-              I am a Software Engineer with 2 years of programming experience
-              from personal and group projects, passionate about solving
-              technical and algorithmic problems while thriving in collaborative
-              environments.
-            </p>
-            <p>
-              My previous career in the Marine Corps provided me
-              with invaluable experiences that honed my ability to maintain
-              composure under pressure and collaborate effectively with diverse
-              groups, even in unique and challenging circumstances. This
-              background has instilled in me a deep commitment to maintaining a
-              high level of dependability, which manifests in consistently
-              delivering results and adeptly troubleshooting issues as they
-              arise. I approach every project with a disciplined, adaptable, and
-              innovative mindset, combining my technical expertise with a
-              passion for collaborative problem-solving, ensuring the delivery
-              of creative solutions and optimal results as a valuable team
-              contributor.
+            As a Software Engineer with 2 years of experience in programming from academic, personal, and group projects, I am passionate about solving technical and algorithmic challenges. My approach to work is characterized by a disciplined, adaptable, and innovative mindset, which drives me to excel in collaborative environments. With a strong commitment to dependability, I consistently deliver results and adeptly manage troubleshooting. My technical expertise enhances my ability for collaborative problem-solving, ensuring the creation and implementation of creative solutions and making me a valuable contributor to any team.
             </p>
           </div>
         </div>
